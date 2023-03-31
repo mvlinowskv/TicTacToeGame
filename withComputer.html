@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game Tic Tac Toe with Computer</title>
+    <meta name="description" content="Tic Tac Toe Game 2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut Icon" href="tic-tac-toe-svgrepo-com.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="withComputer">
+    <h1>Tic Tac Toe Game with Computer</h1>
+    <table id="ticTacGame">
+        <tr>
+            <td id="cell-1" onclick="cellClicked(1)"></td>
+            <td id="cell-2" onclick="cellClicked(2)"></td>
+            <td id="cell-3" onclick="cellClicked(3)"></td>
+        </tr>
+        <tr>
+            <td id="cell-4" onclick="cellClicked(4)"></td>
+            <td id="cell-5" onclick="cellClicked(5)"></td>
+            <td id="cell-6" onclick="cellClicked(6)"></td>
+        </tr>
+        <tr>
+            <td id="cell-7" onclick="cellClicked(7)"></td>
+            <td id="cell-8" onclick="cellClicked(8)"></td>
+            <td id="cell-9" onclick="cellClicked(9)"></td>
+        </tr>
+    </table>
+    <p id="message"></p>
+    <button onclick="restart()">Restart</button>
+    <a href="index.html" class="btn">Tic Tac Toe with your friend</a>
+
+    <script src="scriptWithComputer.js"></script>
+</body>
+
+</html>
