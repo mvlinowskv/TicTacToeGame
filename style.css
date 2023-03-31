@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    height: 100vh;
+}
+
+#ticTacGame {
+    border-spacing: 0px;
+    border-collapse: separate;
+    margin: 30px auto;
+}
+
+#ticTacGame td {
+    border: 1px solid #585858;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+#ticTacGame tr:first-child td {
+    border-top: none
+}
+
+#ticTacGame tr:last-child td {
+    border-bottom: none
+}
+
+#ticTacGame tr td:first-child {
+    border-left: none;
+}
+
+#ticTacGame tr td:last-child {
+    border-right: none;
+}
+
+.gamer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: #2b2727;
+    font-weight: 400;
+}
+
+#ticTacGame td.X,
+#player1 {
+    color: #630791;
+}
+
+#ticTacGame td.O,
+#player2 {
+    color: #006411;
+}
+
+.score {
+    text-align: center;
+    font-size: 2.2rem
+}
+
+.score#player1 {
+    color: #630791;
+}
+
+.score#player2 {
+    color: #006411;
+}
+
+.ticTacToe-results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    margin: auto;
+}
