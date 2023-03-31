@@ -147,25 +147,11 @@ var placeholder = document.getElementById("placeholder");
 const message = document.getElementById('message')
 var tictactoe = new GameTicTac(placeholder, 3, onResult);
 
-function onResult(result, scores) {
+function onResult(result) {
     if (result == 'draw') {
         alert("Draw!");
     } else {
         message.innerHTML = result + " wins";
-        // updateScoreUsers(scores.X, scores.O);
     }
     tictactoe.empty();
-}
-
-// function updateScoreUsers(X, O) {
-//     document.querySelector("#player1").innerHTML = X;
-//     document.querySelector("#player2").innerHTML = O;
-// }
-
-function restart(grid_size) {
-    tictactoe.reset();
-    updateScoreUsers(0, 0);
-    if (grid_size) {
-        tictactoe.paint(grid_size);
-    }
 }
