@@ -144,23 +144,23 @@ GameTicTac.prototype.reset = function() {
 
 
 var placeholder = document.getElementById("placeholder");
-
+const message = document.getElementById('message')
 var tictactoe = new GameTicTac(placeholder, 3, onResult);
 
 function onResult(result, scores) {
     if (result == 'draw') {
-        alert("Remis");
+        alert("Draw!");
     } else {
-        alert(result + " wygrał");
-        updateScoreUsers(scores.X, scores.O);
+        message.innerHTML = result + " wins";
+        // updateScoreUsers(scores.X, scores.O);
     }
     tictactoe.empty();
 }
 
-function updateScoreUsers(X, O) {
-    document.querySelector("#player1").innerHTML = X;
-    document.querySelector("#player2").innerHTML = O;
-}
+// function updateScoreUsers(X, O) {
+//     document.querySelector("#player1").innerHTML = X;
+//     document.querySelector("#player2").innerHTML = O;
+// }
 
 function restart(grid_size) {
     tictactoe.reset();

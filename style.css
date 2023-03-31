@@ -23,19 +23,23 @@ body {
     cursor: pointer;
 }
 
-#ticTacGame tr:first-child td {
+#ticTacGame tr:first-child td,
+#cell-1 {
     border-top: none
 }
 
-#ticTacGame tr:last-child td {
+#ticTacGame tr:last-child td,
+#cell-9 {
     border-bottom: none
 }
 
-#ticTacGame tr td:first-child {
+#ticTacGame tr td:first-child,
+#cell-1 {
     border-left: none;
 }
 
-#ticTacGame tr td:last-child {
+#ticTacGame tr td:last-child,
+#cell-9 {
     border-right: none;
 }
 
@@ -63,11 +67,13 @@ body {
     font-size: 2.2rem
 }
 
-.score#player1 {
+.score#player1,
+.x {
     color: #630791;
 }
 
-.score#player2 {
+.score#player2,
+.o {
     color: #006411;
 }
 
@@ -82,6 +88,38 @@ button {
     background: #bf0000;
     border: 0;
     padding: 0.75rem 2rem;
+    color: #fff;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #5a5353;
+}
+
+.withComputer td {
+    width: 150px;
+    height: 150px;
+    font-size: 4.5rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid rgb(33, 33, 33);
+    cursor: pointer;
+}
+
+.withComputer table {
+    margin: auto;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1rem;
+    background: #17161d;
+    border: 0;
+    padding: 0.6rem 2rem;
     color: #fff;
     font-size: 1.25rem;
     text-transform: uppercase;
